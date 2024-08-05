@@ -13,10 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://anshi369sharma:Anshika369@cluster0.j5uc8vz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect('mongodb+srv://anshi369sharma:Anshika369@cluster0.j5uc8vz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('MongoDB connected'))
     .catch(err => {
       console.error('MongoDB connection error: ', err);
