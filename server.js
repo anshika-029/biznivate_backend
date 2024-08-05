@@ -34,9 +34,6 @@ app.use('/api/categories', require('./Routes/Category'));
 app.use('/api/admin', require('./Routes/Admin'));
 app.use('/api/career', require('./Routes/Career'));
 app.use('/api/contactform', require('./Routes/ContactForm'));
-app.use("/", (req,res) => {
-  res.json({message:"This is the biznivate's backend"})
-});
 
 
 
