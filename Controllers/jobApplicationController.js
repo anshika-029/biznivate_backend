@@ -1,10 +1,10 @@
-const JobApplication = require('../Models/JobApplication');
+const JobApplication = require('../models/JobApplication');
 const multer = require('multer');
 
 // Multer configuration for handling file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './uploads/');
+        cb(null, './upload/');
     },
     filename: (req, file, cb) => {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
