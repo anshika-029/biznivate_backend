@@ -14,6 +14,10 @@ const contactFormSchema = new mongoose.Schema({
         required: true,
         match: [/^\S+@\S+\.\S+$/, 'Please fill a valid email address'],
     },
+    department: {
+        type: String,
+        required: true,
+    },
     message: {
         type: String,
         required: true,

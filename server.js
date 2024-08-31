@@ -22,7 +22,6 @@ mongoose.connect('mongodb+srv://anshi369sharma:Anshika369@cluster0.j5uc8vz.mongo
       }
       process.exit(1);
     });
-  
 
 
 // Routes
@@ -31,6 +30,7 @@ app.use('/api/categories', require('./Routes/Category'));
 app.use('/api/admin', require('./Routes/Admin'));
 app.use('/api/career', require('./Routes/Career'));
 app.use('/api/contactform', require('./Routes/ContactForm'));
+app.use('/api/jobapplication', require('./Routes/JobApplication'));
 
 
 

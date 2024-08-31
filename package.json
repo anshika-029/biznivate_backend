@@ -7,7 +7,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "start":"node server.js",
+    "start": "node server.js",
     "test": "nodemon"
   },
   "keywords": [
@@ -23,7 +23,9 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",
-    "node": "^20.16.0"
+    "multer": "^1.4.5-lts.1",
+    "node": "^20.16.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
