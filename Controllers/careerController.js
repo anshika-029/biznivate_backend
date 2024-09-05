@@ -5,7 +5,7 @@ exports.getCareer = async (req, res) => {
     const { page = 1, limit = 10 } = req.query;
 
     try {
-        const careers = await Career.find()
+        const careers = await Career.find({}, 'title location')
             .skip((page - 1) * limit)
             .limit(parseInt(limit));
         const total = await Career.countDocuments();
